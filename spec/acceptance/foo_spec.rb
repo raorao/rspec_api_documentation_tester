@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
 resource "Foo" do
-  header "Content-Type", "application/json; version=1"
+  header "Content-Type", "application/json"
   parameter :json_attribute
 
   let(:json_attribute) { "some value" }
